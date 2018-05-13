@@ -17,9 +17,9 @@ int main()
     int max1 = 0, maxRow = 0, maxCol = 0;
     double **arr = NULL;
 
-    cout << "Ââåäèòå N\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ N\n";
     cin  >> N;
-    cout << "Ââåäèòå ìàññèâ\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²\n";
 
     arr = new double *[N];
     for(int i = 0; i < N; i++)
@@ -40,7 +40,7 @@ int main()
 
     arr = changeRow(arr, maxRow, 0);
     arr = changeCol(arr, maxCol, 0, N);
-    cout << "Ïîëó÷åííûé ìàññèâ\n";
+    cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²\n";
     for(int i = 0; i < N; i++)
     {
         for(int j = 0; j < N; j++)
